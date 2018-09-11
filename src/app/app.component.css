@@ -1,0 +1,11 @@
+.main .container {
+  display: flex;
+}
+
+.main .left-column {
+  width: 65%;
+}
+
+.main .right-column {
+  width: 35%;
+}
