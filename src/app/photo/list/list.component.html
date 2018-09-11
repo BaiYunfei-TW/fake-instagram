@@ -24,6 +24,12 @@
           </li>
         </ul>
       </div>
+      <div class="comment-form-box">
+        <form class="comment-form" (submit)="submitComment(photo)">
+          <input type="text" placeholder="添加评论..." name="comment" [(ngModel)]="comment">
+          <button type="submit">添加</button>
+        </form>
+      </div>
     </footer>
   </article>
 </div>

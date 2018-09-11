@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import PhotoList from '../../../data/PhotoList';
+import userInfo from '../../../data/UserInfo';
 
 @Component({
   selector: 'app-photo-list',
@@ -10,6 +11,7 @@ import PhotoList from '../../../data/PhotoList';
 export class ListComponent implements OnInit {
 
   photoList = null;
+  comment = '';
 
   constructor() {
     this.photoList = PhotoList;
@@ -30,5 +32,14 @@ export class ListComponent implements OnInit {
 
   markPhoto(photo) {
     photo.marked = !photo.marked;
+  }
+
+  submitComment(photo) {
+    photo.comments.push({
+      nickName: userInfo.nickName,
+      content: this.comment
+    });
+    this.comment = '';
+    return false;
   }
 }
