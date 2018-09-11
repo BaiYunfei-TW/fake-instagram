@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import subscribeList from '../../data/SubscribeList';
 
 @Component({
   selector: 'app-user-info',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserInfoComponent implements OnInit {
 
-  constructor() { }
+  subscribeList = [];
+
+  constructor() {
+    this.subscribeList = subscribeList;
+  }
 
   ngOnInit() {
   }

@@ -14,58 +14,13 @@
       <span>全部播放</span>
     </header>
     <ul class="subscribe-list">
-      <li>
+      <li *ngFor="let user of subscribeList">
         <div class="avatar-box">
-          <img src="/assets/avatar1.jpg" />
+          <img [src]="user.avatar" />
         </div>
         <div class="user-info">
-          <b>nickname</b>
-          <span>5小时前</span>
-        </div>
-      </li>
-      <li>
-        <div class="avatar-box">
-          <img src="/assets/avatar1.jpg" />
-        </div>
-        <div class="user-info">
-          <b>nickname</b>
-          <span>5小时前</span>
-        </div>
-      </li>
-      <li>
-        <div class="avatar-box">
-          <img src="/assets/avatar1.jpg" />
-        </div>
-        <div class="user-info">
-          <b>nickname</b>
-          <span>5小时前</span>
-        </div>
-      </li>
-      <li>
-        <div class="avatar-box">
-          <img src="/assets/avatar1.jpg" />
-        </div>
-        <div class="user-info">
-          <b>nickname</b>
-          <span>5小时前</span>
-        </div>
-      </li>
-      <li>
-        <div class="avatar-box">
-          <img src="/assets/avatar1.jpg" />
-        </div>
-        <div class="user-info">
-          <b>nickname</b>
-          <span>5小时前</span>
-        </div>
-      </li>
-      <li>
-        <div class="avatar-box">
-          <img src="/assets/avatar1.jpg" />
-        </div>
-        <div class="user-info">
-          <b>nickname</b>
-          <span>5小时前</span>
+          <b>{{user.nickName}}</b>
+          <span>{{user.time}}</span>
         </div>
       </li>
     </ul>
