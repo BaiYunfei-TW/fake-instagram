@@ -13,3 +13,10 @@
 .main .right-column {
   width: 35%;
 }
+
+hr {
+  margin-bottom: 10px;
+  border: 0px;
+  height: 1px;
+  background-color: #e6e6e6;
+}
