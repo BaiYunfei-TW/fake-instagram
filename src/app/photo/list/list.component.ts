@@ -18,4 +18,13 @@ export class ListComponent implements OnInit {
   ngOnInit() {
   }
 
+  upPhoto(photo) {
+    if (photo.up === true) {
+      photo.up = false;
+      photo.upQuantity--;
+      return;
+    }
+    photo.up = true;
+    photo.upQuantity++;
+  }
 }

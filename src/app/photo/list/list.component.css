@@ -72,3 +72,14 @@
   margin-left: auto !important;
   justify-self: flex-end;
 }
+
+.checked {
+  color: #ed4956 !important;
+}
+
+.up-quantity {
+  margin: 0 10px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
