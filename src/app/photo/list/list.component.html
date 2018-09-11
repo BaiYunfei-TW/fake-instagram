@@ -12,7 +12,7 @@
         <i class="fa" [ngClass]="{'fa-heart-o': !photo.up, 'fa-heart checked': photo.up}" (click)="upPhoto(photo)"></i>
         <i class="fa fa-comments-o"></i>
         <i class="fa fa-share-square-o"></i>
-        <i class="fa fa-bookmark-o icon-right"></i>
+        <i class="fa icon-right" [ngClass]="{'fa-bookmark-o': !photo.marked, 'fa-bookmark checked': photo.marked}" (click)="markPhoto(photo)"></i>
       </div>
       <div class="up-quantity">
         {{photo.upQuantity}}次赞

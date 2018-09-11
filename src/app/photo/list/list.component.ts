@@ -19,12 +19,16 @@ export class ListComponent implements OnInit {
   }
 
   upPhoto(photo) {
-    if (photo.up === true) {
+    if (photo.up) {
       photo.up = false;
       photo.upQuantity--;
       return;
     }
     photo.up = true;
     photo.upQuantity++;
+  }
+
+  markPhoto(photo) {
+    photo.marked = !photo.marked;
   }
 }
