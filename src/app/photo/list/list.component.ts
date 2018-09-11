@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import PhotoList from '../../../data/PhotoList';
+
 @Component({
   selector: 'app-photo-list',
   templateUrl: './list.component.html',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  photoList = null;
+
+  constructor() {
+    this.photoList = PhotoList;
+  }
 
   ngOnInit() {
   }

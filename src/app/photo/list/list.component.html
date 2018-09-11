@@ -1,11 +1,11 @@
 <div class="photo-list-box">
-  <article>
+  <article *ngFor="let photo of photoList">
     <header class="nickname-bar">
-      <div class="avatar-box"><img src="/assets/avatar.jpg" /></div>
-      <div class="nickname">worldstar</div>
+      <div class="avatar-box"><img [src]="photo.avatar" /></div>
+      <div class="nickname">{{photo.nickName}}</div>
     </header>
     <div class="photo-list-image-box">
-      <img src="/assets/image.png" />
+      <img [src]="photo.image" />
     </div>
     <div>
       <div class="icon-bar">

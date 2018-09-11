@@ -1,5 +1,8 @@
 .photo-list-box {
   margin-right: 28px;
+}
+
+.photo-list-box article {
   margin-bottom: 60px;
 }
 
