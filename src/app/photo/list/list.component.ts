@@ -35,6 +35,9 @@ export class ListComponent implements OnInit {
   }
 
   submitComment(photo) {
+    if (this.comment === '') {
+      return false;
+    }
     photo.comments.push({
       nickName: userInfo.nickName,
       content: this.comment
