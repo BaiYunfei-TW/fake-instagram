@@ -7,7 +7,7 @@
     <div class="photo-list-image-box">
       <img [src]="photo.image" />
     </div>
-    <div>
+    <footer>
       <div class="icon-bar">
         <i class="fa" [ngClass]="{'fa-heart-o': !photo.up, 'fa-heart checked': photo.up}" (click)="upPhoto(photo)"></i>
         <i class="fa fa-comments-o"></i>
@@ -17,7 +17,14 @@
       <div class="up-quantity">
         {{photo.upQuantity}}次赞
       </div>
-    </div>
+      <div class="comment-list">
+        <ul>
+          <li *ngFor="let comment of photo.comments">
+            <b>{{comment.nickName}}&nbsp;&nbsp;</b>{{comment.content}}
+          </li>
+        </ul>
+      </div>
+    </footer>
   </article>
 </div>
 
