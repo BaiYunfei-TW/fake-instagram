@@ -1,0 +1,47 @@
+@import "~font-awesome/css/font-awesome.css";
+
+header {
+  height: 77px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  font-size: 1.5em;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 215px;
+  height: 28px;
+  background: #fafafa;
+
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+
+  font-size: 0.6em;
+  text-align: center;
+  color: #999999;
+}
+
+header .search i{
+  font-size: 0.4em;
+
+  display: inline-block;
+  padding-right: 10px;
+}
+
+header .icon-bar i {
+  display: inline-block;
+  margin: 10px;
+  font-weight: lighter;
+  color: #003569;
+}
