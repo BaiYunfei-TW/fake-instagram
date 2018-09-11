@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import subscribeList from '../../data/SubscribeList';
+import userInfo from '../../data/UserInfo';
 
 @Component({
   selector: 'app-user-info',
@@ -9,9 +10,11 @@ import subscribeList from '../../data/SubscribeList';
 export class UserInfoComponent implements OnInit {
 
   subscribeList = [];
+  userInfo = null;
 
   constructor() {
     this.subscribeList = subscribeList;
+    this.userInfo = userInfo;
   }
 
   ngOnInit() {
