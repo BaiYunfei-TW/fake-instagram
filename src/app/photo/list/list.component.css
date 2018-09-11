@@ -1,0 +1,71 @@
+.photo-list-box {
+  margin-right: 28px;
+  margin-bottom: 60px;
+}
+
+.photo-list-box header {
+  background-color: white;
+}
+
+.photo-list-box article {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+.nickname-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nickname-bar .nickname {
+  font-weight: 600;
+}
+
+.nickname-bar .avatar-box {
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid #ed4956;
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  margin: 10px;
+}
+
+.nickname-bar img {
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.photo-list-image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-list-image-box {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.icon-bar {
+  display: flex;
+  vertical-align: baseline;
+}
+
+.icon-bar i {
+  display: inline-block;
+  margin: 10px;
+  font-weight: lighter;
+  color: #000;
+  font-size: 1.5em;
+}
+
+.icon-right {
+  display: inline-block;
+  margin-left: auto !important;
+  justify-self: flex-end;
+}
